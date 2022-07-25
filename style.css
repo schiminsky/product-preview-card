@@ -40,9 +40,9 @@ body {
 }
 
 .img {
-  display: flex;
   width: 300px;
   height: 400px;
+  display: flex;
   border-bottom-left-radius: 10px;
   border-top-left-radius: 10px;
 }
@@ -118,4 +118,61 @@ body {
   left: 385px;
   width: 18px;
   height: 18px;
+}
+
+@media only screen and (max-device-width: 600px){
+  .container {
+    display: flex;
+    height: 900px;
+  }
+
+  .div-main {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    top: 0;
+    left: 0;
+    transform: translate(0,0);
+    align-items: center;
+    justify-content: center;
+  }
+
+  .div-son {
+    flex-direction: column;
+  }
+
+  .div-img {
+    height: 250px;
+  }
+
+  .img {
+    width: 340px;
+    height: 250px;
+    background-size: cover;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 0px;
+    content: url("/assets/image-product-mobile.jpg");
+  }
+
+  .content {
+    width: 400px;
+  }
+
+  .title {
+    width: 280px;
+  }
+
+  .paragraph {
+    width: 285px;
+  }
+
+  .cart{
+    position: relative;
+  }
+  .cart:after {
+    top: 14px;
+    left: 86px;
+    position: absolute;
+  }
+
 }
